@@ -1,0 +1,1360 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#"
+     xml:base="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#hasBeenFoundHere -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#hasBeenFoundHere">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#city">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#codeUIC -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#codeUIC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Train_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#department -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#department">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#foundDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#foundDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#latitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#longitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#recoveredDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#recoveredDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#region">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#typeObject -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#typeObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#zipcode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#zipcode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Accessoires_2_roues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Accessoires_2_roues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Accessoires_de_musique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Accessoires_de_musique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Agenda_calendrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Agenda_calendrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#AirPod_casque_audio_ecouteurs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#AirPod_casque_audio_ecouteurs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_audio_portable_lecteur_de_CD_baladeur_MP3_iPod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_audio_portable_lecteur_de_CD_baladeur_MP3_iPod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_audio_portable_protege -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_audio_portable_protege">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_photo_camescope_cameras_et_accessoires -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_photo_camescope_cameras_et_accessoires">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_photo_camescope_cameras_et_accessoires_protege_sac_sacoche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_photo_camescope_cameras_et_accessoires_protege_sac_sacoche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareils_auditifs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareils_auditifs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareils_respiratoire_avec_ou_sans_protection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareils_respiratoire_avec_ou_sans_protection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Apres_ski -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Apres_ski">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Argent_liquide_Especes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Argent_liquide_Especes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Article_de_papeterie_stylo_classeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Article_de_papeterie_stylo_classeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Attache_case_serviette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Attache_case_serviette">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_argent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_argent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_bagagerie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_bagagerie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_livre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_livre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_optique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_optique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_petit_vehicule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_petit_vehicule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_piece_ou_papier_personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_piece_ou_papier_personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_appareils_et_accessoires_electroniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_appareils_et_accessoires_electroniques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_de__sport_loisirs_camping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_de__sport_loisirs_camping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_de_papeterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_de_papeterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_enfants_bebe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_enfants_bebe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_medicaux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_medicaux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_bijoux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_bijoux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_divers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_divers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_instruments_de_musique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_instruments_de_musique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_jeux_jouets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_jeux_jouets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_vetements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_vetements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Badge_magnetique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Badge_magnetique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bague -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bague">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bande_dessinee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bande_dessinee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Baton_de_marche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Baton_de_marche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bequilles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bequilles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Billets_SNCF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Billets_SNCF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bonnet_chapeau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bonnet_chapeau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Boucles_d_oreilles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Boucles_d_oreilles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bracelet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bracelet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Broche_pendentif -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Broche_pendentif">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Calculatrice_de_poche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Calculatrice_de_poche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Canne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Canne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cartable_a_dessins_pochette_a_dessins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cartable_a_dessins_pochette_a_dessins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cartable_trousse_d_ecolier_dossier_scolaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cartable_trousse_d_ecolier_dossier_scolaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_Vitale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_Vitale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_d_abonnement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_d_abonnement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_d_identite_passeport_permis_de_conduire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_d_identite_passeport_permis_de_conduire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_de_credit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_de_credit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Casque_velo_moto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Casque_velo_moto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaine_collier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaine_collier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaussures_autre_que_chaussures_de_ski_et_patins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaussures_autre_que_chaussures_de_ski_et_patins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaussures_de_ski_patins_a_glace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaussures_de_ski_patins_a_glace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chemise_a_rabat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chemise_a_rabat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chequier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chequier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cigarette_electronique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cigarette_electronique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cle_de_voiture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cle_de_voiture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cles_porte_cles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cles_porte_cles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Club_de_golf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Club_de_golf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Couteau_de_poche_autre_couteau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Couteau_de_poche_autre_couteau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Deambulateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Deambulateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Diplome_papiers_personnels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Diplome_papiers_personnels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Disque_dur_externe_cle_USB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Disque_dur_externe_cle_USB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Doudou_peluche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Doudou_peluche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Etui_a_lunettes_vide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Etui_a_lunettes_vide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Fauteuil_roulant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Fauteuil_roulant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Flute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Flute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Foulard_echarpe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Foulard_echarpe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#GPS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#GPS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Gants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Gants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Guitare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Guitare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Housse_de_vetement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Housse_de_vetement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Jeu_electronique_console_de_jeux_Gameboy_PSP_DS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Jeu_electronique_console_de_jeux_Gameboy_PSP_DS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Jumelles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Jumelles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Landau_poussette_d_enfants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Landau_poussette_d_enfants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_de_poche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_de_poche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_numerique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_numerique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_relie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_relie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_scolaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_scolaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Luge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Luge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Lunettes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Lunettes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Lunettes_en_etui -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Lunettes_en_etui">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Manteau_veste_blazer_parka_blouson_cape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Manteau_veste_blazer_parka_blouson_cape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Materiel_diabetique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Materiel_diabetique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Medicaments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Medicaments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Montre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Montre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Necessaire_mallette_de_toilette_sac_de_maquillage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Necessaire_mallette_de_toilette_sac_de_maquillage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#hasBeenFoundHere"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordinateur_ordinateur_portable_notebook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordinateur_ordinateur_portable_notebook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordinateur_ordinateur_portable_notebook_protege_etui_housse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordinateur_ordinateur_portable_notebook_protege_etui_housse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordonnance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordonnance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Outils_Accesoires -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Outils_Accesoires">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Parapluie_canne_parapluie_a_bandouliere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Parapluie_canne_parapluie_a_bandouliere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Parapluie_telescopique_parapluie_de_poche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Parapluie_telescopique_parapluie_de_poche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Photos_album_de_photos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Photos_album_de_photos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Piece_d_identite_personnelle_et_autre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Piece_d_identite_personnelle_et_autre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Porte_monnaie_portefeuille -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Porte_monnaie_portefeuille">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Poupee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Poupee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Produits_cosmetiques_parfum_etc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Produits_cosmetiques_parfum_etc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Pull_over_gilet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Pull_over_gilet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Radiographie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Radiographie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Raquette_de_tennis_de_badminton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Raquette_de_tennis_de_badminton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Retroprojecteur_videoprojecteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Retroprojecteur_videoprojecteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Rollers_patins_a_roulettes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Rollers_patins_a_roulettes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_a_dos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_a_dos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_a_main -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_a_main">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_d_enseigne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_d_enseigne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_d_enseigne_plastique_papier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_d_enseigne_plastique_papier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_de_voyage_sac_de_sport_sac_a_bandouliere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_de_voyage_sac_de_sport_sac_a_bandouliere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacoche_pour_ordinateur_photo_video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacoche_pour_ordinateur_photo_video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacoche_ventrale_banane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacoche_ventrale_banane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacs_de_couchage_duvet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacs_de_couchage_duvet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Siege_auto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Siege_auto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Skateboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Skateboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Skis_batons_de_ski -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Skis_batons_de_ski">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Snowboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Snowboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Support_de_donnees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Support_de_donnees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tabac_et_accessoire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tabac_et_accessoire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tablette_tactile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tablette_tactile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tablette_tactile_protegee_etui_housse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tablette_tactile_protegee_etui_housse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Telephone_portable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Telephone_portable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Telephone_portable_protege_etui_coque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Telephone_portable_protege_etui_coque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Televiseur_magnetoscope_lecteur_DVD_radio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Televiseur_magnetoscope_lecteur_DVD_radio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Titre_livret_d_epargne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Titre_livret_d_epargne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Train_station -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Train_station">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Trottinette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Trottinette">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Valise_sac_sur_roulettes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Valise_sac_sur_roulettes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Velo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Velo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Violon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Violon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#zertcvjbk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#zertcvjbk"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Accessoires_2_roues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Accessoires_de_musique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Agenda_calendrier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#AirPod_casque_audio_ecouteurs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_audio_portable_lecteur_de_CD_baladeur_MP3_iPod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_audio_portable_protege"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_photo_camescope_cameras_et_accessoires"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareil_photo_camescope_cameras_et_accessoires_protege_sac_sacoche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareils_auditifs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Appareils_respiratoire_avec_ou_sans_protection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Apres_ski"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Argent_liquide_Especes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Article_de_papeterie_stylo_classeur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Attache_case_serviette"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_argent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_bagagerie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_livre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_optique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_petit_vehicule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autre_piece_ou_papier_personnel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_appareils_et_accessoires_electroniques"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_de__sport_loisirs_camping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_de_papeterie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_enfants_bebe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_articles_medicaux"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_bijoux"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_divers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_instruments_de_musique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_jeux_jouets"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Autres_vetements"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Badge_magnetique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bague"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bande_dessinee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Baton_de_marche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bequilles"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Billets_SNCF"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bonnet_chapeau"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Boucles_d_oreilles"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Bracelet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Broche_pendentif"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Calculatrice_de_poche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Canne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cartable_a_dessins_pochette_a_dessins"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cartable_trousse_d_ecolier_dossier_scolaire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_Vitale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_d_abonnement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_d_identite_passeport_permis_de_conduire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Carte_de_credit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Casque_velo_moto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaine_collier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaussures_autre_que_chaussures_de_ski_et_patins"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chaussures_de_ski_patins_a_glace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chemise_a_rabat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Chequier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cigarette_electronique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cle_de_voiture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Cles_porte_cles"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Club_de_golf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Couteau_de_poche_autre_couteau"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Deambulateur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Diplome_papiers_personnels"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Disque_dur_externe_cle_USB"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Doudou_peluche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Etui_a_lunettes_vide"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Fauteuil_roulant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Flute"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Foulard_echarpe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#GPS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Gants"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Guitare"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Housse_de_vetement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Jeu_electronique_console_de_jeux_Gameboy_PSP_DS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Jumelles"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Landau_poussette_d_enfants"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_de_poche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_numerique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_relie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Livre_scolaire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Luge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Lunettes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Lunettes_en_etui"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Manteau_veste_blazer_parka_blouson_cape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Materiel_diabetique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Medicaments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Montre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Necessaire_mallette_de_toilette_sac_de_maquillage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordinateur_ordinateur_portable_notebook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordinateur_ordinateur_portable_notebook_protege_etui_housse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Ordonnance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Outils_Accesoires"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Parapluie_canne_parapluie_a_bandouliere"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Parapluie_telescopique_parapluie_de_poche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Photos_album_de_photos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Piece_d_identite_personnelle_et_autre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Porte_monnaie_portefeuille"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Poupee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Produits_cosmetiques_parfum_etc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Pull_over_gilet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Radiographie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Raquette_de_tennis_de_badminton"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Retroprojecteur_videoprojecteur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Rollers_patins_a_roulettes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_a_dos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_a_main"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_d_enseigne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_d_enseigne_plastique_papier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sac_de_voyage_sac_de_sport_sac_a_bandouliere"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacoche_pour_ordinateur_photo_video"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacoche_ventrale_banane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Sacs_de_couchage_duvet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Siege_auto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Skateboard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Skis_batons_de_ski"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Snowboard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Support_de_donnees"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tabac_et_accessoire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tablette_tactile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tablette_tactile_protegee_etui_housse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Telephone_portable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Telephone_portable_protege_etui_coque"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Televiseur_magnetoscope_lecteur_DVD_radio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Tente"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Titre_livret_d_epargne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Trottinette"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Valise_sac_sur_roulettes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Velo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#Violon"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

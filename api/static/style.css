@@ -1,0 +1,49 @@
+.logo {
+	height: 100px;
+	margin: auto;
+}
+
+.logo img{
+    height: 100%;
+    padding: 8px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cta{
+	width: 80%;
+	margin: 100px auto;
+	background-color: #EBEBEB;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 50px 0;
+}
+
+.cta2{
+	width: 80%;
+	margin: 100px auto;
+	background-color: #BBB;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 50px 0;
+}
+
+
+.row{
+	margin-top: 1%;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#map{
+    width:100% ;
+    right: 0;
+    height:600px;
+    position: absolute;
+}

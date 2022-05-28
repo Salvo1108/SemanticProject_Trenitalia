@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<title>Oggetti Smarriti Trenitalia API</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	  crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+
+<body>
+	<div class="logo">
+		<a href="https://www.trenitalia.com/it.html"><img src="{{ url_for('static', filename='Trenitalia_logo.png') }}" > </a>
+	</div>
+
+	<section class="cta">
+		<form action="/result/" method="POST" class="form-inline">
+			<div class="row">
+				<div class="select-nature-div">
+					<label>Tipo Oggetto Smarrito:</label>
+					<select id="nature_selected" name="nature_selected" class="selectpicker form-control">
+						{% for elt in l_nature_windows %}
+						<option value="{{ elt }}">{{ elt }}</option>
+						{% endfor %}
+					</select>
+				</div>
+
+				<div class="input-zipcode">
+					<label>CAP Stazione:</label>
+					<input type="text" minlength="5" maxlength="5" id="zipcode_selected" name="zipcode_selected" placeholder="Inserire CAP">
+				</div>
+
+				<div class="select-nature-div">
+						<label>Solo oggetti non ancora recuperati?</label>
+						<select id="rdate_selected" name="rdate_selected" class="selectpicker form-control">
+							{% for elt in ["Si", "No"] %}
+							<option value="{{ elt }}">{{ elt }}</option>
+							{% endfor %}
+						</select>
+				</div>
+			</div>
+
+			<div class="selectpicker form-control">
+				<button type="submit" class="btn">Ricerca</button>
+			</div>
+		</form>
+            <br>
+            <br>
+            <form action="/charts/" method="GET" class="form-inline">
+				<button type="submit" class="btn">Statistiche</button>
+			</form>
+	</section>
+
+	<div style="text-align: center;">
+		<p>Ultimo Oggetto '{{ last_object }}' trovato '{{ last_date }}' alle '{{ last_hour }}' in '{{ last_place }}'!</p>
+	</div>
+
+
+	<div id="map"></div>
+
+	<script type="text/javascript" src="{{ url_for('static', filename='functions.js') }}"></script>
+
+	<script>
+		{% for marker in markers %}
+		L.marker([{{ marker['lat'] }}, {{ marker['lon'] }}]).addTo(map).bindPopup("{{ marker['popup'] }}").openPopup();
+		{% endfor %}
+	</script>
+</body>
+</html>
