@@ -55,7 +55,7 @@ def result_page():
 
 @app.route('/charts/', methods=['GET', 'POST'])
 def chart_page():
-        return render_template('charts.html')
+    return render_template('charts.html')
 
 
 
