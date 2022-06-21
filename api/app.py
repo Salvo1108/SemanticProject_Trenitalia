@@ -12,6 +12,7 @@ app = Flask(__name__)
 def home_app():
     input_path_owl_file = '../data/train_station_context.owl'
     path_owl_file = '../data/output_context.owl'
+    query_get_all_nature(path_owl_file)
     get_data_to_rdf_object(input_path_owl_file, path_owl_file)
     last = query_get_last_date_of_lost_objects(path_owl_file)
     last_object = last[0]
@@ -37,19 +38,19 @@ def result_page():
     if request.method == 'POST':
         nature_obj = request.form.get('nature_selected')
         print(f'nature: {nature_obj}')
-        zipcode = str(request.form.get('zipcode_selected'))
-        print(f'zipcode: {zipcode}')
+        CAP = str(request.form.get('CAP_selected'))
+        print(f'CAP: {CAP}')
         b_recovered_date = request.form.get('rdate_selected')
         print(f'recovered_date: {b_recovered_date}')
 
-        if nature_obj == 'All' and zipcode != '':
-            query_final = query_get_all_lost_object_with_conditions(path_owl_file, zipcode, hasRecoveredDate)
-        elif nature_obj != 'All' and zipcode != '':
-            query_final = query_get_lost_object_with_conditions(path_owl_file, nature_obj, zipcode, hasRecoveredDate)
-        elif nature_obj == 'All' and zipcode == '':
-            query_final = query_get_all_lost_object_with_conditions(path_owl_file, 'zipcode', hasRecoveredDate)
+        if nature_obj == 'All' and CAP != '':
+            query_final = query_get_all_lost_object_with_conditions(path_owl_file, CAP, hasRecoveredDate)
+        elif nature_obj != 'All' and CAP != '':
+            query_final = query_get_lost_object_with_conditions(path_owl_file, nature_obj, CAP, hasRecoveredDate)
+        elif nature_obj == 'All' and CAP == '':
+            query_final = query_get_all_lost_object_with_conditions(path_owl_file, 'CAP', hasRecoveredDate)
         else:
-            query_final = query_get_lost_object_with_conditions(path_owl_file, nature_obj, 'zipcode', hasRecoveredDate)
+            query_final = query_get_lost_object_with_conditions(path_owl_file, nature_obj, 'CAP', hasRecoveredDate)
         verif_df = len(query_final)
         return render_template('result.html', df_result=[query_final.to_html(classes='d')], len_df=verif_df)
 

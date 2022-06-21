@@ -4,7 +4,7 @@ from utils import convert_list_queries_to_df
 
 
 prefix = """
-        PREFIX ns: <http://www.semanticweb.org/tinou/ontologies/2022/2/untitled-ontology-38#>
+        PREFIX ns: <http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -42,7 +42,7 @@ def query_get_instances(path: str):
                 ?obj rdf:type ?nature .
                 ?obj ns:foundDate ?fDate .
                 ?obj ns:recoveredDate ?rDate . 
-                ?obj ns:hasBeenFoundHere ?place .
+                ?obj ns:eStatoTrovato ?place .
                 ?place ns:name ?name .
                 ?place ns:codeUIC ?uic .
                 ?place ns:latitude ?lat .
@@ -65,7 +65,7 @@ def query_condition_rdate_not_nan(path: str, nature: str, place: str):
             ?obj rdf:type ns:{nature}.
             ?obj ns:foundDate ?fDate. 
             ?obj ns:recoveredDate ?rDate. 
-            ?obj ns:hasBeenFoundHere ns:{place}.
+            ?obj ns:eStatoTrovato ns:{place}.
             FILTER(?rDate != "nan")
     """
     condition_query3 = """
@@ -86,7 +86,7 @@ def query_condition_rdate_nan(path: str, nature: str, place: str):
             ?obj rdf:type ?{nature}.
             ?obj ns:foundDate ?fDate. 
             ?obj ns:recoveredDate ?rDate. 
-            ?obj ns:hasBeenFoundHere ns:{place}.
+            ?obj ns:eStatoTrovato ns:{place}.
             FILTER(?rDate = "nan")
     """
     condition_query3 = """
@@ -106,7 +106,7 @@ def query_get_train_station_by_CAP(path: str, CAP: str):
     condition_query2 = f"""
             ?nature rdfs:subClassOf ns:Object .
             ?obj rdf:type ?nature .
-            ?obj ns:hasBeenFoundHere ?place.
+            ?obj ns:eStatoTrovato ?place.
             ?place ns:CAP ?CAP.
             FILTER(?CAP = "{CAP}")
     """
@@ -121,13 +121,13 @@ def query_get_train_station_by_CAP(path: str, CAP: str):
 def query_get_last_date_of_lost_objects(path: str):
     graph = start_queries(path)
     condition_query = """
-        SELECT ?nature ?fDate ?name
+        SELECT ?nature ?fDate ?nomeStazione
         WHERE{
             ?nature rdfs:subClassOf ns:Object .
             ?obj rdf:type ?nature .
             ?obj ns:foundDate ?fDate.
             ?obj ns:hasBeenFoundHere ?place.
-            ?place ns:name ?name.
+            ?place ns:nomeStazione ?nomeStazione.
     }
     ORDER BY DESC(?fDate)
     """
@@ -143,7 +143,7 @@ def query_get_lat_long_name_train_station(path: str):
         WHERE{
             ?nature rdfs:subClassOf ns:Object .
             ?obj rdf:type ?nature .
-            ?obj ns:hasBeenFoundHere ?place.
+            ?obj ns:eStatoTrovato ?place.
             ?place ns:latitude ?lat.
             ?place ns:longitude ?long.
             ?place ns:name ?name.
@@ -174,13 +174,13 @@ def query_get_lost_object_with_conditions(path: str, nature: str, CAP: str, hasR
     if hasRecoveredDate == "Oui":
         condition_query_optional = f"""
             FILTER(?rDate != "nan")
-            ?obj ns:hasBeenFoundHere ?place.
+            ?obj ns:eStatoTrovato ?place.
             ?place ns:CAP ?CAP.
         """
     else:
         condition_query_optional = f"""
             FILTER(?rDate = "nan")
-            ?obj ns:hasBeenFoundHere ?place.
+            ?obj ns:eStatoTrovato ?place.
             ?place ns:CAP ?CAP.
         """
 
@@ -224,13 +224,13 @@ def query_get_all_lost_object_with_conditions(path: str, CAP: str, hasRecoveredD
     if hasRecoveredDate == "Oui":
         condition_query_optional = f"""
             FILTER(?rDate != "nan")
-            ?obj ns:hasBeenFoundHere ?place.
+            ?obj ns:eStatoTrovato ?place.
             ?place ns:CAP ?CAP.
         """
     else:
         condition_query_optional = f"""
             FILTER(?rDate = "nan")
-            ?obj ns:hasBeenFoundHere ?place.
+            ?obj ns:eStatoTrovato ?place.
             ?place ns:name ?name.
             ?place ns:CAP ?CAP.
         """

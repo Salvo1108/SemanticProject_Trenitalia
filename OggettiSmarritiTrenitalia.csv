@@ -1,0 +1,49 @@
+Data;Data di restituzione;Stazione;Codice;Oggetto;Categoria;Stato
+2021-04-03T11:32:56+02:00;;BARI CENTRALE;S11119;Passaporto;Documenti d'identità e personali;Trovato
+2021-04-06T13:27:49+02:00;;MILANO CENTRALE;S01700;Borsa;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-06T13:53:38+02:00;;REGGIO EMILIA;S05023;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-06T14:08:39+02:00;;BARI CENTRALE;S11119;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-06T14:37:21+02:00;2021-07-08T09:19:24+02:00;SICIGNANO DEGLI ALBURNI;S09827;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-07T14:27:34+02:00;;GENOVA BRIGNOLE;S04702;Borsa;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-07T17:56:03+02:00;;TAORMINA;S12317;Portafoglio;Portafoglio, denaro;Trovato
+2021-04-07T18:08:33+02:00;;MILANO CENTRALE;S01700;Passaporto;Documenti d'identità e personali;Trovato
+2021-04-09T17:01:38+02:00;2021-05-27T12:40:23+02:00;GENOVA BRIGNOLE;S04702;Portafoglio;Portafoglio, denaro;Trovato
+2021-04-25T18:41:14+02:00;2021-04-27T11:56:00+02:00;REGGIO EMILIA;S05023;Borsa;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-27T08:31:57+02:00;;MILANO CENTRALE;S01700;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-27T08:49:10+02:00;;TAORMINA;S12317;Borsa;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-05T11:14:31+02:00;;REGGIO EMILIA;S05023;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-06T14:00:01+02:00;;BARI CENTRALE;S11119;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-06T14:25:59+02:00;2021-09-10T09:57:36+02:00;CROTONE;S11823;Borsa di plastica;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-07T18:18:09+02:00;2021-06-09T09:54:55+02:00;TAORMINA;S12317;Portafoglio;Portafoglio, denaro;Trovato
+2021-04-07T18:15:00+02:00;;MILANO CENTRALE;S01700;Passaporto;Documenti d'identità e personali;Trovato
+2021-04-11T19:38:15+02:00;;CROTONE;S11823;Borsa;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-20T08:08:43+02:00;;GENOVA BRIGNOLE;S04702;Occhiali;Ottica;Trovato
+2021-04-23T11:53:09+02:00;2021-06-05T11:41:47+02:00;NAPOLI CENTRALE;S09218;Passaporto;Documenti d'identità e personali;Trovato
+2021-04-27T09:00:24+02:00;;CROTONE;S11823;Valigia;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-06T13:46:31+02:00;;MILANO CENTRALE;S01700;Giubotto;Vestiti, scarpe;Trovato
+2021-04-07T16:47:49+02:00;;SICIGNANO DEGLI ALBURNI;S09827;Chiavi Casa;Chiavi, portachiavi, badge magnetici;Trovato
+2021-04-07T17:41:57+02:00;2021-06-10T09:45:29+02:00;MILANO CENTRALE;S01700;Portafoglio;Portafoglio, denaro;Trovato
+2021-04-16T11:38:03+02:00;2021-05-15T10:26:59+02:00;BARI CENTRALE;S11119;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-18T11:28:00+02:00;2021-05-25T12:54:41+02:00;NOVARA;S00248;Passaporto;Documenti d'identità e personali;Trovato
+2021-04-20T08:07:02+02:00;;MANAROLA;S04735;Passaporto;Documenti d'identità e personali;Trovato
+2021-04-27T08:41:30+02:00;;LISON;S02663;Borsa;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-28T18:28:39+02:00;;REGGIO EMILIA;S05023;Chiavi Casa;Chiavi, portachiavi, badge magnetici;Trovato
+2021-04-30T18:02:28+02:00;;EBOLI;S09824;Passaporto;Documenti d'identità e personali;Trovato
+2021-04-06T14:14:14+02:00;2021-06-19T13:13:27+02:00;NOVARA;S00248;Borsa;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-06T14:31:46+02:00;;NAPOLI CENTRALE;S09218;Valigia;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-07T07:20:26+02:00;2021-05-26T12:13:22+02:00;LISON;S02663;Portafoglio;Portafoglio, denaro;Trovato
+2021-04-07T18:04:46+02:00;;MANAROLA;S04735;Cellulare;Elettronica, computer, macchine fotografiche;Trovato
+2021-04-07T17:49:50+02:00;;NOVARA;S00248;Cellulare;Elettronica, computer, macchine fotografiche;Trovato
+2021-04-08T15:01:54+02:00;2021-05-28T09:27:40+02:00;NAPOLI CENTRALE;S09218;Cellulare;Elettronica, computer, macchine fotografiche;Trovato
+2021-04-20T08:03:53+02:00;;EBOLI;S09824;Carta di identità;Documenti d'identità e personali;Trovato
+2021-04-20T08:13:55+02:00;;NAPOLI CENTRALE;S09218;Borsa di plastica;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-21T13:22:30+02:00;;GROTTAMMARE;S07512;Carta Di Credito;Portafoglio, denaro;Trovato
+2021-04-27T11:04:39+02:00;2021-04-27T11:43:29+02:00;CAMPELLO;S07219;Altri Oggetti Vari;Oggetti diversi;Trovato
+2021-04-06T08:58:14+02:00;;NAPOLI CENTRALE;S09218;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-06T14:20:25+02:00;;GROTTAMMARE;S07512;Borsa di plastica;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-07T17:27:30+02:00;;NOVARA;S00248;Cartelle;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-20T08:17:55+02:00;;NOVARA;S00248;Borsa;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-20T08:28:31+02:00;;GROTTAMMARE;S07512;Zaino;Bagagli: borse, valigie, cartelle;Trovato
+2021-04-20T11:54:52+02:00;;CAMPELLO;S07219;Computer Portatile;Elettronica, computer, macchine fotografiche;Trovato
+2021-04-23T17:04:38+02:00;;LISON;S02663;Chiavi Casa;Chiavi, portachiavi, badge magnetici;Trovato
+2021-04-27T09:25:55+02:00;;EBOLI;S09824;Carta Di Credito;Portafoglio, denaro;Trovato
