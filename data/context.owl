@@ -456,6 +456,10 @@
    <owl:Class rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola">
       <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Object" />
    </owl:Class>
+   <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio -->
+   <owl:Class rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio">
+      <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Object" />
+   </owl:Class>
    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -573,6 +577,7 @@
          <rdf:Description rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Videocamera_e_Accessori" />
          <rdf:Description rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Violino" />
          <rdf:Description rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola" />
+         <rdf:Description rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio" />
       </owl:members>
    </rdf:Description>
 </rdf:RDF>

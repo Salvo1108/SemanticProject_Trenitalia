@@ -19,6 +19,7 @@ def start_queries(ontology: str):
     return g
 
 
+#FUNZIONA
 def query_get_all_nature(path: str):
     graph = start_queries(path)
     nature_query = """
@@ -132,7 +133,9 @@ def query_get_last_date_of_lost_objects(path: str):
     ORDER BY DESC(?fDate)
     """
     res = graph.query(prefix + '\n' + condition_query)
-    l_elt = [[row.nature.split('#')[1], row.fDate.value, row.name.value] for row in res][0]
+    for row in res:
+        print(row)
+    l_elt = [[row.nature.split('#')[1], row.fDate.value, row.nomeStazione.value] for row in res][0]
     return l_elt
 
 
@@ -261,7 +264,7 @@ def query_get_all_lost_object_with_conditions(path: str, CAP: str, hasRecoveredD
 if __name__ == "__main__":
     path_owl_file = './data/output_context.owl'
 
-    q = query_get_lost_object_with_conditions(path_owl_file, 'Carte_d_identite_passeport_permis_de_conduire', 'CAP', 'Oui')
+    #q = query_get_lost_object_with_conditions(path_owl_file, 'Carte_d_identite_passeport_permis_de_conduire', 'CAP', 'Oui')
     # q = query_get_lost_object_with_conditions(path_owl_file, 'Carte_d_identite_passeport_permis_de_conduire', '75015', 'Oui')
     # q = query_get_lost_object_with_conditions(path_owl_file, 'All', 'CAP', 'Oui')
     # q = query_get_lost_object_with_conditions(path_owl_file, 'All', '75015', 'Oui')

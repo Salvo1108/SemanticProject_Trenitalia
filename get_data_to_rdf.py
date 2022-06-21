@@ -18,9 +18,9 @@ def get_data_to_rdf_object(input_path_data: str, output_path_data: str):
             owl_first_line = f'    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ{ind + 1}">\n'
             elt_rdf_type = df_objects.loc[ind, "Oggetto"]
             elt_rdf_nature = df_objects.loc[ind, "Categoria"]
-            rdf_nature = f'        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#{syntax_to_owl(elt_rdf_nature)}"/>\n'
+            rdf_nature = f'        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#{syntax_to_owl(elt_rdf_type)}"/>\n'
             rdf_property = f'        <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#{(unidecode.unidecode(str(df_objects.loc[ind, "Stazione"]))).replace(" ", "_")}"/>\n'
-            rdf_type = f'        <typeObject>{unidecode.unidecode(str(elt_rdf_type))}</typeObject>\n'
+            rdf_type = f'        <typeObject>{unidecode.unidecode(str(elt_rdf_nature))}</typeObject>\n'
             found_date = f'        <foundDate>{df_objects.loc[ind, "Data"]}</foundDate>\n'
             if df_objects.loc[ind, 'Data di restituzione'] != "nan":
                 recovered_date = f'        <recoveredDate>{df_objects.loc[ind, "Data di restituzione"]}</recoveredDate>\n'

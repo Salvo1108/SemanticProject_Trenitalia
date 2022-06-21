@@ -456,6 +456,10 @@
    <owl:Class rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola">
       <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Object" />
    </owl:Class>
+   <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio -->
+   <owl:Class rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio">
+      <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Object" />
+   </owl:Class>
    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -41858,8 +41862,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ1 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ1">
-        <typeObject>Passaporto</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Documenti_d_identita_e_personali"/>
+        <typeObject>Documenti personali</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Passaporto"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#BARI_CENTRALE"/>
         <foundDate>2021-04-03T11:32:56+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41869,8 +41873,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ2 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ2">
-        <typeObject>Borsa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#MILANO_CENTRALE"/>
         <foundDate>2021-04-06T13:27:49+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41880,8 +41884,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ3 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ3">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#REGGIO_EMILIA"/>
         <foundDate>2021-04-06T13:53:38+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41891,8 +41895,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ4 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ4">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#BARI_CENTRALE"/>
         <foundDate>2021-04-06T14:08:39+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41902,8 +41906,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ5 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ5">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#SICIGNANO_DEGLI_ALBURNI"/>
         <foundDate>2021-04-06T14:37:21+02:00</foundDate>
         <recoveredDate>2021-07-08T09:19:24+02:00</recoveredDate>
@@ -41913,8 +41917,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ6 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ6">
-        <typeObject>Borsa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#GENOVA_BRIGNOLE"/>
         <foundDate>2021-04-07T14:27:34+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41924,8 +41928,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ7 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ7">
-        <typeObject>Portafoglio</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio_denaro"/>
+        <typeObject>Portafoglio, denaro</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#TAORMINA"/>
         <foundDate>2021-04-07T17:56:03+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41935,8 +41939,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ8 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ8">
-        <typeObject>Passaporto</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Documenti_d_identita_e_personali"/>
+        <typeObject>Documenti d'identita e personali</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Passaporto"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#MILANO_CENTRALE"/>
         <foundDate>2021-04-07T18:08:33+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41946,8 +41950,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ9 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ9">
-        <typeObject>Portafoglio</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio_denaro"/>
+        <typeObject>Portafoglio, denaro</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#GENOVA_BRIGNOLE"/>
         <foundDate>2021-04-09T17:01:38+02:00</foundDate>
         <recoveredDate>2021-05-27T12:40:23+02:00</recoveredDate>
@@ -41957,8 +41961,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ10 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ10">
-        <typeObject>Borsa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#REGGIO_EMILIA"/>
         <foundDate>2021-04-25T18:41:14+02:00</foundDate>
         <recoveredDate>2021-04-27T11:56:00+02:00</recoveredDate>
@@ -41968,8 +41972,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ11 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ11">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#MILANO_CENTRALE"/>
         <foundDate>2021-04-27T08:31:57+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41979,8 +41983,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ12 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ12">
-        <typeObject>Borsa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#TAORMINA"/>
         <foundDate>2021-04-27T08:49:10+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -41990,8 +41994,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ13 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ13">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#REGGIO_EMILIA"/>
         <foundDate>2021-04-05T11:14:31+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42001,8 +42005,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ14 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ14">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#BARI_CENTRALE"/>
         <foundDate>2021-04-06T14:00:01+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42012,8 +42016,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ15 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ15">
-        <typeObject>Borsa di plastica</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#CROTONE"/>
         <foundDate>2021-04-06T14:25:59+02:00</foundDate>
         <recoveredDate>2021-09-10T09:57:36+02:00</recoveredDate>
@@ -42023,8 +42027,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ16 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ16">
-        <typeObject>Portafoglio</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio_denaro"/>
+        <typeObject>Portafoglio, denaro</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#TAORMINA"/>
         <foundDate>2021-04-07T18:18:09+02:00</foundDate>
         <recoveredDate>2021-06-09T09:54:55+02:00</recoveredDate>
@@ -42034,8 +42038,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ17 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ17">
-        <typeObject>Passaporto</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Documenti_d_identita_e_personali"/>
+        <typeObject>Documenti d'identita e personali</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Passaporto"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#MILANO_CENTRALE"/>
         <foundDate>2021-04-07T18:15:00+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42045,8 +42049,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ18 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ18">
-        <typeObject>Borsa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#CROTONE"/>
         <foundDate>2021-04-11T19:38:15+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42056,8 +42060,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ19 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ19">
-        <typeObject>Occhiali</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Ottica"/>
+        <typeObject>Ottica</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Occhiali"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#GENOVA_BRIGNOLE"/>
         <foundDate>2021-04-20T08:08:43+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42067,8 +42071,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ20 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ20">
-        <typeObject>Passaporto</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Documenti_d_identita_e_personali"/>
+        <typeObject>Documenti d'identita e personali</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Passaporto"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NAPOLI_CENTRALE"/>
         <foundDate>2021-04-23T11:53:09+02:00</foundDate>
         <recoveredDate>2021-06-05T11:41:47+02:00</recoveredDate>
@@ -42078,8 +42082,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ21 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ21">
-        <typeObject>Valigia</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Valigia"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#CROTONE"/>
         <foundDate>2021-04-27T09:00:24+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42089,8 +42093,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ22 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ22">
-        <typeObject>Giubotto</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Vestiti_scarpe"/>
+        <typeObject>Vestiti, scarpe</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Giubotto"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#MILANO_CENTRALE"/>
         <foundDate>2021-04-06T13:46:31+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42100,8 +42104,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ23 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ23">
-        <typeObject>Chiavi Casa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Chiavi_portachiavi_badge_magnetici"/>
+        <typeObject>Chiavi, portachiavi, badge magnetici</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Chiavi_Casa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#SICIGNANO_DEGLI_ALBURNI"/>
         <foundDate>2021-04-07T16:47:49+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42111,8 +42115,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ24 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ24">
-        <typeObject>Portafoglio</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio_denaro"/>
+        <typeObject>Portafoglio, denaro</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#MILANO_CENTRALE"/>
         <foundDate>2021-04-07T17:41:57+02:00</foundDate>
         <recoveredDate>2021-06-10T09:45:29+02:00</recoveredDate>
@@ -42122,8 +42126,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ25 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ25">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#BARI_CENTRALE"/>
         <foundDate>2021-04-16T11:38:03+02:00</foundDate>
         <recoveredDate>2021-05-15T10:26:59+02:00</recoveredDate>
@@ -42133,8 +42137,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ26 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ26">
-        <typeObject>Passaporto</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Documenti_d_identita_e_personali"/>
+        <typeObject>Documenti d'identita e personali</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Passaporto"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NOVARA"/>
         <foundDate>2021-04-18T11:28:00+02:00</foundDate>
         <recoveredDate>2021-05-25T12:54:41+02:00</recoveredDate>
@@ -42144,8 +42148,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ27 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ27">
-        <typeObject>Passaporto</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Documenti_d_identita_e_personali"/>
+        <typeObject>Documenti d'identita e personali</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Passaporto"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#MANAROLA"/>
         <foundDate>2021-04-20T08:07:02+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42155,8 +42159,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ28 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ28">
-        <typeObject>Borsa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#LISON"/>
         <foundDate>2021-04-27T08:41:30+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42166,8 +42170,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ29 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ29">
-        <typeObject>Chiavi Casa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Chiavi_portachiavi_badge_magnetici"/>
+        <typeObject>Chiavi, portachiavi, badge magnetici</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Chiavi_Casa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#REGGIO_EMILIA"/>
         <foundDate>2021-04-28T18:28:39+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42177,8 +42181,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ30 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ30">
-        <typeObject>Passaporto</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Documenti_d_identita_e_personali"/>
+        <typeObject>Documenti d'identita e personali</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Passaporto"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#EBOLI"/>
         <foundDate>2021-04-30T18:02:28+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42188,8 +42192,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ31 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ31">
-        <typeObject>Borsa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NOVARA"/>
         <foundDate>2021-04-06T14:14:14+02:00</foundDate>
         <recoveredDate>2021-06-19T13:13:27+02:00</recoveredDate>
@@ -42199,8 +42203,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ32 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ32">
-        <typeObject>Valigia</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Valigia"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NAPOLI_CENTRALE"/>
         <foundDate>2021-04-06T14:31:46+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42210,8 +42214,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ33 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ33">
-        <typeObject>Portafoglio</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio_denaro"/>
+        <typeObject>Portafoglio, denaro</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#LISON"/>
         <foundDate>2021-04-07T07:20:26+02:00</foundDate>
         <recoveredDate>2021-05-26T12:13:22+02:00</recoveredDate>
@@ -42221,8 +42225,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ34 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ34">
-        <typeObject>Cellulare</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Elettronica_computer_macchine_fotografiche"/>
+        <typeObject>Elettronica, computer, macchine fotografiche</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Cellulare"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#MANAROLA"/>
         <foundDate>2021-04-07T18:04:46+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42232,8 +42236,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ35 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ35">
-        <typeObject>Cellulare</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Elettronica_computer_macchine_fotografiche"/>
+        <typeObject>Elettronica, computer, macchine fotografiche</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Cellulare"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NOVARA"/>
         <foundDate>2021-04-07T17:49:50+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42243,8 +42247,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ36 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ36">
-        <typeObject>Cellulare</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Elettronica_computer_macchine_fotografiche"/>
+        <typeObject>Elettronica, computer, macchine fotografiche</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Cellulare"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NAPOLI_CENTRALE"/>
         <foundDate>2021-04-08T15:01:54+02:00</foundDate>
         <recoveredDate>2021-05-28T09:27:40+02:00</recoveredDate>
@@ -42254,8 +42258,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ37 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ37">
-        <typeObject>Carta di identita</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Documenti_d_identita_e_personali"/>
+        <typeObject>Documenti d'identita e personali</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Carta_Identita"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#EBOLI"/>
         <foundDate>2021-04-20T08:03:53+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42265,8 +42269,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ38 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ38">
-        <typeObject>Borsa di plastica</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NAPOLI_CENTRALE"/>
         <foundDate>2021-04-20T08:13:55+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42276,8 +42280,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ39 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ39">
-        <typeObject>Carta Di Credito</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio_denaro"/>
+        <typeObject>Portafoglio, denaro</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Carta_Di_Credito"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#GROTTAMMARE"/>
         <foundDate>2021-04-21T13:22:30+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42287,8 +42291,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ40 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ40">
-        <typeObject>Altri Oggetti Vari</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Oggetti_diversi"/>
+        <typeObject>Oggetti diversi</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Altri_Oggetti_Vari"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#CAMPELLO"/>
         <foundDate>2021-04-27T11:04:39+02:00</foundDate>
         <recoveredDate>2021-04-27T11:43:29+02:00</recoveredDate>
@@ -42298,8 +42302,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ41 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ41">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NAPOLI_CENTRALE"/>
         <foundDate>2021-04-06T08:58:14+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42309,8 +42313,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ42 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ42">
-        <typeObject>Borsa di plastica</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#GROTTAMMARE"/>
         <foundDate>2021-04-06T14:20:25+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42320,8 +42324,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ43 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ43">
-        <typeObject>Cartelle</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NOVARA"/>
         <foundDate>2021-04-07T17:27:30+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42331,8 +42335,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ44 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ44">
-        <typeObject>Borsa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Borsa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#NOVARA"/>
         <foundDate>2021-04-20T08:17:55+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42342,8 +42346,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ45 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ45">
-        <typeObject>Zaino</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Bagagli_borse_valigie_cartelle"/>
+        <typeObject>Bagagli: borse, valigie, cartelle</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#GROTTAMMARE"/>
         <foundDate>2021-04-20T08:28:31+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42353,8 +42357,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ46 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ46">
-        <typeObject>Computer Portatile</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Elettronica_computer_macchine_fotografiche"/>
+        <typeObject>Elettronica, computer, macchine fotografiche</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Computer_Portatile"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#CAMPELLO"/>
         <foundDate>2021-04-20T11:54:52+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42364,8 +42368,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ47 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ47">
-        <typeObject>Chiavi Casa</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Chiavi_portachiavi_badge_magnetici"/>
+        <typeObject>Chiavi, portachiavi, badge magnetici</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Chiavi_Casa"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#LISON"/>
         <foundDate>2021-04-23T17:04:38+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42375,8 +42379,8 @@
     
     <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ48 -->
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#OBJ48">
-        <typeObject>Carta Di Credito</typeObject>
-        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio_denaro"/>
+        <typeObject>Portafoglio, denaro</typeObject>
+        <rdf:type rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Carta_Di_Credito"/>
         <hasBeenFoundHere rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#EBOLI"/>
         <foundDate>2021-04-27T09:25:55+02:00</foundDate>
         <recoveredDate>nan</recoveredDate>
@@ -42485,6 +42489,7 @@
          <rdf:Description rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Videocamera_e_Accessori" />
          <rdf:Description rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Violino" />
          <rdf:Description rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Zaino_Scuola" />
+         <rdf:Description rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Portafoglio" />
       </owl:members>
    </rdf:Description>
 </rdf:RDF>
