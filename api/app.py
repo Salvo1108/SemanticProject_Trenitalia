@@ -38,19 +38,19 @@ def result_page():
     if request.method == 'POST':
         nature_obj = request.form.get('nature_selected')
         print(f'nature: {nature_obj}')
-        CAP = str(request.form.get('CAP_selected'))
-        print(f'CAP: {CAP}')
+        Regione = str(request.form.get('Regione_selected'))
+        print(f'Regione: {Regione}')
         b_recovered_date = request.form.get('rdate_selected')
         print(f'recovered_date: {b_recovered_date}')
 
-        if nature_obj == 'All' and CAP != '':
-            query_final = query_get_all_lost_object_with_conditions(path_owl_file, CAP, hasRecoveredDate)
-        elif nature_obj != 'All' and CAP != '':
-            query_final = query_get_lost_object_with_conditions(path_owl_file, nature_obj, CAP, hasRecoveredDate)
-        elif nature_obj == 'All' and CAP == '':
-            query_final = query_get_all_lost_object_with_conditions(path_owl_file, 'CAP', hasRecoveredDate)
+        if nature_obj == 'All' and Regione != '':
+            query_final = query_get_all_lost_object_with_conditions(path_owl_file, Regione, hasRecoveredDate)
+        elif nature_obj != 'All' and Regione != '':
+            query_final = query_get_lost_object_with_conditions(path_owl_file, nature_obj, Regione, hasRecoveredDate)
+        elif nature_obj == 'All' and Regione == '':
+            query_final = query_get_all_lost_object_with_conditions(path_owl_file, 'Regione', hasRecoveredDate)
         else:
-            query_final = query_get_lost_object_with_conditions(path_owl_file, nature_obj, 'CAP', hasRecoveredDate)
+            query_final = query_get_lost_object_with_conditions(path_owl_file, nature_obj, 'Regione', hasRecoveredDate)
         verif_df = len(query_final)
         return render_template('result.html', df_result=[query_final.to_html(classes='d')], len_df=verif_df)
 

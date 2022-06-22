@@ -24,9 +24,9 @@
                      {% endfor %}
                   </select>
                </div>
-               <div class="input-CAP">
-                  <label>CAP Stazione:</label>
-                  <input type="text" minlength="5" maxlength="5" id="CAP_selected" name="CAP_selected" placeholder="Inserire CAP">
+               <div class="input-Regione">
+                  <label>Regione della Stazione:</label>
+                  <input type="text" id="Regione_selected" name="Regione_selected" placeholder="Inserire Regione">
                </div>
                <div class="select-nature-div">
                   <label>Solo oggetti non ancora recuperati?</label>
@@ -38,12 +38,10 @@
                </div>
             </div>
             <br>
-            <br>
             <div class="selectpicker form-control">
                <button type="submit" class="btn">Ricerca</button>
             </div>
          </form>
-         <br>
          <br>
          <form action="/charts/" method="GET" class="form-inline">
             <button type="submit" class="btn">Statistiche</button>
