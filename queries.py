@@ -19,7 +19,6 @@ def start_queries(ontology: str):
     return g
 
 
-#FUNZIONA
 def query_get_all_nature(path: str):
     graph = start_queries(path)
     nature_query = """
@@ -140,10 +139,10 @@ def query_get_last_date_of_lost_objects(path: str):
 def query_get_lat_long_name_train_station(path: str):
     graph = start_queries(path)
     condition_query = """
-        SELECT ?lat ?long ?nomeStazione ?citta ?regione ?codiceRegione
+        SELECT ?lat ?long ?nomeStazione ?citta ?regione ?codiceRegione ?tipo
         WHERE{
             ?nature rdfs:subClassOf ns:Object .
-            ?obj rdf:type ?nature .
+            ?obj rdf:type ?tipo .
             ?obj ns:hasBeenFoundHere ?place.
             ?place ns:latitudine ?lat.
             ?place ns:longitudine ?long.
@@ -154,7 +153,7 @@ def query_get_lat_long_name_train_station(path: str):
     }
     """
     res = graph.query(prefix + '\n' + condition_query)
-    l_elt = [{'lat': row.lat.value, 'lon': row.long.value, 'popup': f'{row.nomeStazione.value} - {row.citta.value} {row.regione.value} {row.codiceRegione.value}'} for row in res]
+    l_elt = [{'lat': row.lat.value, 'lon': row.long.value, 'popup': f'{row.nomeStazione.value} - {row.citta.value}'} for row in res]
     return l_elt
 
 
@@ -172,7 +171,7 @@ def query_get_lost_object_with_conditions(path: str, nature: str, regione: str, 
         ?obj ns:typeObject ?type.
     """
 
-    if hasRecoveredDate == "Oui":
+    if hasRecoveredDate == "Si":
         condition_query_optional = f"""
             FILTER(?rDate != "nan")
             ?obj ns:hasBeenFoundHere ?place.
@@ -203,8 +202,8 @@ def query_get_lost_object_with_conditions(path: str, nature: str, regione: str, 
     # print(prefix + '\n' + condition_query1 + condition_query2 + condition_query_optional + condition_query_optional2 + condition_query3 + condition_query4)
     l_elt = [[nature, row.type.value, row.fDate.value, row.rDate.value, row.regione.value, row.lat.value, row.long.value, row.citta.value] for row in res]
     df = convert_list_queries_to_df(l_queries=l_elt,
-                                    l_cols=['Nature of the Object', 'Type of the Object', 'Found Date', 'Recovered Date',
-                                            'regione of the Station', 'Latitude', 'longitudine', 'citta of the Station'])
+                                    l_cols=['Oggetto', 'Tipo', 'Trovato', 'Consegnato',
+                                            'Regione', 'Latitudine', 'Longitudine', 'Città'])
     return df
 
 
@@ -242,7 +241,7 @@ def query_get_all_lost_object_with_conditions(path: str, regione: str, hasRecove
         condition_query_optional2 = ''
 
     condition_query3 = f"""
-        ?place ns:latitude ?lat.
+        ?place ns:latitudine ?lat.
         ?place ns:longitudine ?long.
         ?place ns:citta ?citta.
     """
@@ -251,22 +250,13 @@ def query_get_all_lost_object_with_conditions(path: str, regione: str, hasRecove
     ORDER BY DESC(?fDate)
     """
     res = graph.query(prefix + '\n' + condition_query1 + condition_query2 + condition_query_optional + condition_query_optional2 + condition_query3 + condition_query4)
-    # print(prefix + '\n' + condition_query1 + condition_query2 + condition_query_optional + condition_query_optional2 + condition_query3 + condition_query4)
+    #print(prefix + '\n' + condition_query1 + condition_query2 + condition_query_optional + condition_query_optional2 + condition_query3 + condition_query4)
     l_elt = [[row.nature.split('#')[1], row.type.value, row.fDate.value, row.rDate.value, row.regione.value, row.lat.value, row.long.value, row.citta.value] for row in res]
     df = convert_list_queries_to_df(l_queries=l_elt,
-                                    l_cols=['Nature of the Object', 'Type of the Object', 'Found Date', 'Recovered Date',
-                                            'regione of the Station', 'Latitude', 'longitudine', 'citta of the Station'])
+                                    l_cols=['Oggetto', 'Tipo', 'Trovato', 'Consegnato',
+                                            'Regione', 'Latitudine', 'Longitudine', 'Città'])
     return df
 
 
 if __name__ == "__main__":
     path_owl_file = './data/output_context.owl'
-
-    #q = query_get_lost_object_with_conditions(path_owl_file, 'Carte_d_identite_passeport_permis_de_conduire', 'regione', 'Oui')
-    # q = query_get_lost_object_with_conditions(path_owl_file, 'Carte_d_identite_passeport_permis_de_conduire', '75015', 'Oui')
-    # q = query_get_lost_object_with_conditions(path_owl_file, 'All', 'regione', 'Oui')
-    # q = query_get_lost_object_with_conditions(path_owl_file, 'All', '75015', 'Oui')
-    # q = query_get_all_nature(path_owl_file)
-    # q = query_get_last_date_of_lost_objects(path_owl_file)
-    # q = query_get_lat_long_name_train_station(path_owl_file)
-    print(q)
