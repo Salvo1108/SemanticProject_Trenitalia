@@ -139,10 +139,10 @@ def query_get_last_date_of_lost_objects(path: str):
 def query_get_lat_long_name_train_station(path: str):
     graph = start_queries(path)
     condition_query = """
-        SELECT ?lat ?long ?nomeStazione ?citta ?regione ?codiceRegione ?tipo
+        SELECT ?lat ?long ?nomeStazione ?citta ?regione ?codiceRegione
         WHERE{
             ?nature rdfs:subClassOf ns:Object .
-            ?obj rdf:type ?tipo .
+            ?obj rdf:type ?nature .
             ?obj ns:hasBeenFoundHere ?place.
             ?place ns:latitudine ?lat.
             ?place ns:longitudine ?long.

@@ -3,12 +3,13 @@
    <meta charset="UTF-8" />
    <title>Oggetti Smarriti Trenitalia API</title>
    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+     crossorigin="">
+   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+     crossorigin="">
+   </script>
    <body>
       <div class="logo">
          <a href="https://www.trenitalia.com/it.html"><img src="{{ url_for('static', filename='Trenitalia_logo.png') }}" > </a>
@@ -51,7 +52,15 @@
          <p>Ultimo Oggetto '{{ last_object }}' trovato '{{ last_date }}' alle '{{ last_hour }}' in '{{ last_place }}'!</p>
       </div>
       <div id="map"></div>
-      <script type="text/javascript" src="{{ url_for('static', filename='functions.js') }}"></script>
+      <script>
+          var map = L.map('map').setView([41, 12], 6);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         attribution:
+             '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors' +
+             ', Tiles courtesy of <a href="https://geo6.be/">GEO-6</a>',
+         maxZoom: 18
+        }).addTo(map);
+      </script>
       <script>
          {% for marker in markers %}
          L.marker([{{ marker['lat'] }}, {{ marker['lon'] }}]).addTo(map).bindPopup("{{ marker['popup'] }}").openPopup();
@@ -59,4 +68,3 @@
       </script>
    </body>
 </html>
-
