@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from queries import query_get_last_date_of_lost_objects, query_get_all_nature, query_get_lost_object_with_conditions, \
-    query_get_lat_long_name_train_station, query_get_all_lost_object_with_conditions
+    query_get_lat_long_name_train_station, query_get_all_lost_object_with_conditions, query_get_number_object_lost
 from get_data_to_rdf import get_data_to_rdf_object
 import ssl
 
@@ -57,7 +57,13 @@ def result_page():
 
 @app.route('/charts/', methods=['GET', 'POST'])
 def chart_page():
-    return render_template('charts.html')
+    path_owl_file = './data/output_context.owl'
+    array_oggetti = []
+    query_final = query_get_number_object_lost(path_owl_file)
+    for elem in query_final:
+        array_oggetti.append(elem[1])
+
+    return render_template('charts.html', object=array_oggetti)
 
 
 if __name__ == '__main__':

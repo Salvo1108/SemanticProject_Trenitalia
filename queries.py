@@ -258,5 +258,71 @@ def query_get_all_lost_object_with_conditions(path: str, regione: str, hasRecove
     return df
 
 
+def query_get_number_filterobject_most_lost(path: str):
+    graph = start_queries(path)
+    condition_query1 = """
+        SELECT DISTINCT ?oggetto ?place (COUNT(?oggetto) as ?total)
+        WHERE {
+            ?obj ns:typeObject ?oggetto .
+            ?obj ns:hasBeenFoundHere ?place .
+            FILTER(?oggetto = "Bagagli: borse, valigie, cartelle")
+            }
+        GROUP BY ?place
+        ORDER BY DESC(?total)
+    """
+    res = graph.query(prefix + '\n' + condition_query1)
+    #for row in res:
+        #print(row.total)
+        #print(row.place.split('#')[1])
+
+    elt = [[row.place.split('#')[1], row.total.value] for row in res]
+    return elt
+
+def query_get_number_object_most_lost(path: str):
+    graph = start_queries(path)
+    condition_query1 = """
+        SELECT DISTINCT ?oggetto ?place (COUNT(?oggetto) as ?total)
+        WHERE {
+            ?obj ns:typeObject ?oggetto .
+            ?obj ns:hasBeenFoundHere ?place .
+            }
+        GROUP BY ?place ?oggetto
+        ORDER BY DESC(?total)
+    """
+    res = graph.query(prefix + '\n' + condition_query1)
+    #for row in res:
+        #print(row.total)
+        #print(row.place.split('#')[1])
+
+    elt = [[row.place.split('#')[1], row.total.value,row.oggetto.value] for row in res]
+    return elt
+
+def query_get_number_object_lost(path: str):
+    graph = start_queries(path)
+    condition_query1 = """
+        SELECT DISTINCT ?oggetto (COUNT(?oggetto) as ?total)
+        WHERE {
+            ?obj ns:typeObject ?oggetto .
+            }
+        GROUP BY  ?oggetto
+        ORDER BY DESC(?total)
+    """
+    res = graph.query(prefix + '\n' + condition_query1)
+    #for row in res:
+        #print(row.total)
+        #print(row.place.split('#')[1])
+
+    elt = [[row.total.value,row.oggetto.value] for row in res]
+    return elt
+
 if __name__ == "__main__":
     path_owl_file = './data/output_context.owl'
+    array_oggetti = []
+    query = query_get_number_object_lost(path_owl_file)
+    for elem in query:
+        array_oggetti.append(elem[1])
+    for st in array_oggetti:
+        print(st)
+
+
+
