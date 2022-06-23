@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from queries import query_get_last_date_of_lost_objects, query_get_all_nature, query_get_lost_object_with_conditions, \
-    query_get_lat_long_name_train_station, query_get_all_lost_object_with_conditions, query_get_number_object_lost
+    query_get_lat_long_name_train_station, query_get_all_lost_object_with_conditions, query_get_number_object_lost, \
+    query_get_number_object_station
 from get_data_to_rdf import get_data_to_rdf_object
 import ssl
 
@@ -14,7 +15,7 @@ def home_app():
     input_path_owl_file = '../data/train_station_context.owl'
     path_owl_file = '../data/output_context.owl'
     query_get_all_nature(path_owl_file)
-    # get_data_to_rdf_object(input_path_owl_file, path_owl_file)
+    #get_data_to_rdf_object(input_path_owl_file, path_owl_file)
     last = query_get_last_date_of_lost_objects(path_owl_file)
     last_object = last[0]
     last_date = last[1]
@@ -55,15 +56,20 @@ def result_page():
         return render_template('result.html', df_result=[query_final.to_html(classes='d')], len_df=verif_df)
 
 
-@app.route('/charts/', methods=['GET', 'POST'])
+@app.route('/statsOggetti/', methods=['GET', 'POST'])
 def chart_page():
     path_owl_file = './data/output_context.owl'
-    array_oggetti = []
     query_final = query_get_number_object_lost(path_owl_file)
-    for elem in query_final:
-        array_oggetti.append(elem[1])
+    verif_df = len(query_final)
+    return render_template('statistiche_oggetti.html', df_result=[query_final.to_html(classes='d')], len_df=verif_df)
 
-    return render_template('charts.html', object=array_oggetti)
+@app.route('/statsStazioni/', methods=['GET', 'POST'])
+def stats_page():
+    path_owl_file = './data/output_context.owl'
+    query_final = query_get_number_object_station(path_owl_file)
+    verif_df = len(query_final)
+    return render_template('statistiche_oggetti.html', df_result=[query_final.to_html(classes='d')], len_df=verif_df)
+
 
 
 if __name__ == '__main__':

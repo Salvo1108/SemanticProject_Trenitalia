@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta charset="UTF-8" />
+   <title>Oggetti Smarriti Trenitalia API</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+   <script type="text/javascript" src="{{ url_for('static', filename='functions.js') }}" ></script>
+   <body>
+      <div class="logo">
+         <a href="https://www.trenitalia.com/it.html"><img src="{{ url_for('static', filename='Trenitalia_logo.png') }}" > </a>
+      </div>
+      <div class="result_query">
+         {% if len_df > 0 %}
+         <div>
+            {% for row in df_result %}
+            {{ row|safe }}
+            {% endfor %}
+         </div>
+         {% else %}
+         <div style="text-align: center;">
+            <p>No Result ...</p>
+         </div>
+      </div>
+      {% endif %}
+   </body>
+</html>

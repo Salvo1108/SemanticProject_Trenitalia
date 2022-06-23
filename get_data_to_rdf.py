@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 def get_data_to_rdf_object(input_path_data: str, output_path_data: str):
     """ Get instances from a dynamic dataset and put it into a owl file in rdf/xml syntax """
-    df_objects = pd.read_csv('../OggettiSmarritiTrenitalia.csv', sep=';')
+    df_objects = pd.read_csv('OggettiSmarritiTrenitalia.csv', sep=';')
 
     with open(input_path_data) as f:
         lines = f.readlines()

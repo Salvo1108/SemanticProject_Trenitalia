@@ -153,7 +153,7 @@ def query_get_lat_long_name_train_station(path: str):
     }
     """
     res = graph.query(prefix + '\n' + condition_query)
-    l_elt = [{'lat': row.lat.value, 'lon': row.long.value, 'popup': f'{row.nomeStazione.value} - {row.citta.value}'} for row in res]
+    l_elt = [{'lat': row.lat.value, 'lon': row.long.value, 'popup': f'{row.nomeStazione.value} - {row.codiceRegione.value}'} for row in res]
     return l_elt
 
 
@@ -271,31 +271,25 @@ def query_get_number_filterobject_most_lost(path: str):
         ORDER BY DESC(?total)
     """
     res = graph.query(prefix + '\n' + condition_query1)
-    #for row in res:
-        #print(row.total)
-        #print(row.place.split('#')[1])
-
     elt = [[row.place.split('#')[1], row.total.value] for row in res]
     return elt
 
-def query_get_number_object_most_lost(path: str):
+def query_get_number_object_station(path: str):
     graph = start_queries(path)
     condition_query1 = """
-        SELECT DISTINCT ?oggetto ?place (COUNT(?oggetto) as ?total)
+        SELECT DISTINCT ?place ?nature (COUNT(?nature) as ?total)
         WHERE {
-            ?obj ns:typeObject ?oggetto .
+            ?obj rdf:type ?nature.
             ?obj ns:hasBeenFoundHere ?place .
             }
-        GROUP BY ?place ?oggetto
-        ORDER BY DESC(?total)
+        GROUP BY ?nature
     """
     res = graph.query(prefix + '\n' + condition_query1)
-    #for row in res:
-        #print(row.total)
-        #print(row.place.split('#')[1])
+    elt = [[row.place.split('#')[1],row.nature.split('#')[1], row.total.value] for row in res]
+    df = convert_list_queries_to_df(l_queries=elt,
+                                    l_cols=['Stazione', 'Oggetto', 'Numero di volte perso'])
 
-    elt = [[row.place.split('#')[1], row.total.value,row.oggetto.value] for row in res]
-    return elt
+    return df
 
 def query_get_number_object_lost(path: str):
     graph = start_queries(path)
@@ -308,21 +302,14 @@ def query_get_number_object_lost(path: str):
         ORDER BY DESC(?total)
     """
     res = graph.query(prefix + '\n' + condition_query1)
-    #for row in res:
-        #print(row.total)
-        #print(row.place.split('#')[1])
-
     elt = [[row.total.value,row.oggetto.value] for row in res]
-    return elt
+    df = convert_list_queries_to_df(l_queries=elt,
+                                    l_cols=['Numero di Oggetti Persi', 'Tipo'])
+    return df
 
 if __name__ == "__main__":
     path_owl_file = './data/output_context.owl'
-    array_oggetti = []
-    query = query_get_number_object_lost(path_owl_file)
-    for elem in query:
-        array_oggetti.append(elem[1])
-    for st in array_oggetti:
-        print(st)
+    print(query_get_number_object_station(path_owl_file))
 
 
 
