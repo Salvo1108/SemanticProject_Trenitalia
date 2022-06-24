@@ -258,21 +258,22 @@ def query_get_all_lost_object_with_conditions(path: str, regione: str, hasRecove
     return df
 
 
-def query_get_number_filterobject_most_lost(path: str):
+def query_charts(path: str):
     graph = start_queries(path)
     condition_query1 = """
-        SELECT DISTINCT ?oggetto ?place (COUNT(?oggetto) as ?total)
-        WHERE {
-            ?obj ns:typeObject ?oggetto .
-            ?obj ns:hasBeenFoundHere ?place .
-            FILTER(?oggetto = "Bagagli: borse, valigie, cartelle")
-            }
-        GROUP BY ?place
-        ORDER BY DESC(?total)
-    """
+           SELECT DISTINCT ?place ?nature
+           WHERE {
+               ?obj rdf:type ?nature.
+               ?obj ns:hasBeenFoundHere ?place .
+               }
+           GROUP BY ?nature
+       """
     res = graph.query(prefix + '\n' + condition_query1)
-    elt = [[row.place.split('#')[1], row.total.value] for row in res]
-    return elt
+    elt = [[row.nature.split('#')[1]] for row in res]
+    categorie = []
+    for row in res:
+        categorie.append(row.nature.split('#')[1])
+    return categorie
 
 def query_get_number_object_station(path: str):
     graph = start_queries(path)
@@ -309,7 +310,7 @@ def query_get_number_object_lost(path: str):
 
 if __name__ == "__main__":
     path_owl_file = './data/output_context.owl'
-    print(query_get_number_object_station(path_owl_file))
+    print(query_charts(path_owl_file))
 
 
 

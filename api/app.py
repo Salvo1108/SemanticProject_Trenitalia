@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from queries import query_get_last_date_of_lost_objects, query_get_all_nature, query_get_lost_object_with_conditions, \
     query_get_lat_long_name_train_station, query_get_all_lost_object_with_conditions, query_get_number_object_lost, \
-    query_get_number_object_station
+    query_get_number_object_station, query_charts
 from get_data_to_rdf import get_data_to_rdf_object
 import ssl
 
@@ -70,7 +70,11 @@ def stats_page():
     verif_df = len(query_final)
     return render_template('statistiche_oggetti.html', df_result=[query_final.to_html(classes='d')], len_df=verif_df)
 
-
+@app.route('/charts/', methods=['GET', 'POST'])
+def charts():
+    path_owl_file = './data/output_context.owl'
+    query_final = query_charts(path_owl_file)
+    return render_template('charts.html', object=query_final)
 
 if __name__ == '__main__':
     app.run(port=5000,debug=True)
