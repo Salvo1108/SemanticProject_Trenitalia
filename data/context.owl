@@ -55,9 +55,12 @@
       <rdfs:domain rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Place" />
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
    </owl:DatatypeProperty>
-
+   <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#typeObject -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#typeObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
    <!-- http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#foundDate -->
-
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#foundDate">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/amivid/ontologies/2022/2/untitled-ontology-38#Object"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
